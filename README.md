@@ -35,5 +35,5 @@ npm run dev
 Open second terminal tab and run
 
 ```bash
-npx json-server --watch db.json --port 5000
+npx run json-server
 ```
