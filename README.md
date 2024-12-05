@@ -1,22 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Management App
+
+This is a simple **Task Management App** built with **Next.js**, **React**, **, and **JSON Server**. The app allows you to manage tasks, including viewing, adding, updating, and deleting tasks. JSON Server is used as a mock backend to simulate a real API.
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository and install
+
+```bash
+git clone <your-repository-url>
+cd task_management
+npm install
+```
+
+### 2. Create env folder 
+
+Create a .env.local file in the root of project
+Add variables to the .env.local file base on file .env.development
+
+### 3. Run project
+
+Open first terminal tab and run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open second terminal tab and run
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
+```bash
+npx json-server --watch db.json --port 5000
+```
