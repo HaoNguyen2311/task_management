@@ -35,5 +35,5 @@ npm run dev
 Open second terminal tab and run
 
 ```bash
-npx run json-server
+npm run json-server
 ```
